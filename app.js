@@ -1,16 +1,16 @@
 
-const data_container = document.getElementById('foods');
+const dataContainer = document.getElementById('foods');
 const searchBtn = document.getElementById('searchBtn');
-const warning = document.getElementById('warning');
+const alert = document.getElementById('alert');
 
 searchBtn.addEventListener('click', function () {
     const keyword = document.getElementById('keyword').value;
-    data_container.innerHTML = '';
+    dataContainer.innerHTML = '';
     if (keyword === '') {
-        warning.style.display = 'block';
+        alert.style.display = 'block';
     } else {
         getFood(keyword);
-        warning.style.display = 'none';
+        alert.style.display = 'none';
     }
 });
 
@@ -67,7 +67,7 @@ function getFood(mealId) {
                 foodsDiv.appendChild(foodDiv);
             });
         } else {
-            warning.style.display = 'block';
+            alert.style.display = 'block';
         }
     };
     
