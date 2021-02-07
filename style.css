@@ -142,10 +142,11 @@ ul li {
 }
 
 footer {
+    font-size: 15px;
     padding: 50px 30px;
     text-align: center;
 }
 
-#warning {
+#alert {
     display: none;
 }
